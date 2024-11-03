@@ -106,8 +106,8 @@
             bindings = <
 &kp SE_SECTION  &kp F1            &kp F2     &kp F3    &kp F4     &kp F5                                 &kp F6             &kp F7                   &kp F8                    &kp F9              &kp F10       &kp SE_STAR
 &trans          &kp EXCL          &kp HOME   &kp UP    &kp END    &kp PRCNT                              &kp SE_LEFT_BRACE  &kp SE_LEFT_PARENTHESIS  &kp SE_RIGHT_PARENTHESIS  &kp SE_RIGHT_BRACE  &kp SE_GRAVE  &kp DELETE
-&trans          &kp HASH          &kp LEFT   &kp DOWN  &kp RIGHT  &kp DLLR   &trans       &kp SE_X       &kp MINUS          &kp SE_LEFT_BRACKET      &kp SE_RIGHT_BRACKET      &kp RIGHT_BRACKET   &kp TILDE     &kp UNDER
-&trans          &kp SE_LESS_THAN  &kp SE_GT  &kp F11   &kp F12    &kp AMPS   &kp PAGE_UP  &kp PAGE_DOWN  &kp UNDER          &kp PLUS                 &kp LEFT_BRACE            &kp RIGHT_BRACE     &kp PIPE      &trans
+&trans          &kp HASH          &kp LEFT   &kp DOWN  &kp RIGHT  &kp DLLR   &trans       &kp SE_X       &kp MINUS          &kp SE_LEFT_BRACKET      &kp SE_RIGHT_BRACKET      &kp RIGHT_BRACKET   &kp TILDE     &kp SE_APOS
+&trans          &kp SE_LESS_THAN  &kp SE_GT  &kp F11   &kp F12    &kp AMPS   &kp PAGE_UP  &kp PAGE_DOWN  &kp SE_BACKSLASH   &kp PLUS                 &kp LEFT_BRACE            &kp RIGHT_BRACE     &kp PIPE      &trans
                                              &trans    &trans     &trans     &trans       &trans         &trans             &trans                   &trans
             >;
 
