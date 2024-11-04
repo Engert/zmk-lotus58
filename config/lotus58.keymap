@@ -88,16 +88,16 @@
             // 52                    |ENT RS|  ALT | SPACE|DELETE LW|  |ENTER RS| BSPC |  ] LW | RGUI  |                        59
 
             bindings = <
-&kp ESC    &kp SE_N1  &kp N2  &kp N3        &kp N4        &kp N5                                &kp N6  &kp N7         &kp N8         &kp N9      &kp N0           &kp SE_PLUS
-&kp TAB    &kp Q      &kp W   &kp E         &kp R         &kp T                                 &kp Y   &kp U          &kp I          &kp O       &kp P            &kp SE_A_RING
-&kp LSHFT  &kp A      &kp S   &kp D         &kp F         &kp G   &kp C_MUTE     &kp C_MUTE     &kp H   &kp J          &kp K          &kp L       &kp SE_O_UMLAUT  &kp SE_A_UMLAUT
-&kp LCTRL  &kp Z      &kp X   &kp C         &kp V         &kp B   &kp SE_UMLAUT  &kp SE_A_RING  &kp N   &kp M          &kp SE_COMMA   &kp SE_DOT  &kp SE_MINUS     &kp SE_APOS
-                              &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE      &kp ENTER      &mo 2   &kp RIGHT_ALT  &kp BACKSPACE
+&kp ESC    &kp SE_N1  &kp N2  &kp N3        &kp N4        &kp N5                                    &kp N6         &kp N7  &kp N8         &kp N9      &kp N0        &kp SE_PLUS
+&kp TAB    &kp Q      &kp W   &kp E         &kp R         &kp T                                     &kp Y          &kp U   &kp I          &kp O       &kp P         &kp SE_A_RING
+&kp LSHFT  &kp A      &kp S   &kp D         &kp F         &kp G   &kp C_MUTE         &kp C_MUTE     &kp H          &kp J   &kp K          &kp L       &kp SEMI      &kp SQT
+&kp LCTRL  &kp Z      &kp X   &kp C         &kp V         &kp B   &kp RIGHT_BRACKET  &kp BACKSLASH  &kp N          &kp M   &kp SE_COMMA   &kp SE_DOT  &kp SE_MINUS  &kp BACKSLASH
+                              &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE          &kp ENTER      &kp BACKSPACE  &mo 2   &kp RIGHT_ALT
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         lower_layer {
@@ -109,11 +109,11 @@
             //                     |  F11 |      |      |        |  |       |      |       |  F12  |
 
             bindings = <
-&kp SE_SECTION  &kp F1            &kp F2     &kp F3    &kp F4     &kp F5                                 &kp F6             &kp F7                   &kp F8                    &kp F9              &kp F10       &kp SE_STAR
-&trans          &kp EXCL          &kp HOME   &kp UP    &kp END    &kp PRCNT                              &kp SE_LEFT_BRACE  &kp SE_LEFT_PARENTHESIS  &kp SE_RIGHT_PARENTHESIS  &kp SE_RIGHT_BRACE  &kp SE_GRAVE  &kp DELETE
-&trans          &kp HASH          &kp LEFT   &kp DOWN  &kp RIGHT  &kp DLLR   &trans       &kp SE_X       &kp MINUS          &kp SE_LEFT_BRACKET      &kp SE_RIGHT_BRACKET      &kp SE_EURO         &kp TILDE     &kp SE_APOS
-&trans          &kp SE_LESS_THAN  &kp SE_GT  &kp F11   &kp F12    &kp AMPS   &kp PAGE_UP  &kp PAGE_DOWN  &kp SE_BACKSLASH   &kp SE_LEFT_BRACE        &kp SE_RIGHT_BRACE        &kp SE_PLUS         &kp PIPE      &trans
-                                             &trans    &trans     &trans     &trans       &trans         &trans             &trans                   &trans
+&kp GRAVE  &kp F1            &kp F2     &kp F3    &kp F4     &kp F5                                 &kp F6             &kp F7                   &kp F8                    &kp F9              &kp F10       &kp SE_STAR
+&trans     &kp EXCL          &kp HOME   &kp UP    &kp END    &kp PRCNT                              &kp SE_LEFT_BRACE  &kp SE_LEFT_PARENTHESIS  &kp SE_RIGHT_PARENTHESIS  &kp SE_RIGHT_BRACE  &kp SE_GRAVE  &kp DELETE
+&trans     &kp HASH          &kp LEFT   &kp DOWN  &kp RIGHT  &kp DLLR   &trans       &kp SE_X       &kp MINUS          &kp SE_LEFT_BRACKET      &kp SE_RIGHT_BRACKET      &kp SE_EURO         &kp TILDE     &kp SE_APOS
+&trans     &kp SE_LESS_THAN  &kp SE_GT  &kp F11   &kp F12    &kp AMPS   &kp PAGE_UP  &kp PAGE_DOWN  &kp SE_BACKSLASH   &kp SE_LEFT_BRACE        &kp SE_RIGHT_BRACE        &kp SE_PLUS         &kp PIPE      &trans
+                                        &trans    &trans     &trans     &trans       &trans         &trans             &trans                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp C_VOL_UP C_VOL_DN>;
